@@ -1,0 +1,64 @@
+@font-face {
+    font-family: '';
+    font-weight: 300;
+    src: local('Merriweather-Light'), url(../fonts/Merriweather/Merriweather-Light.ttf);
+  }
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    src: local('Nunito Sans'), url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: '';
+    font-weight: 700;
+    src: local('Merriweather-Bold'), url(../fonts/Merriweather/Merriweather-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: '';
+    font-weight: 900;
+    src: local('Merriweather-Black'), url(../fonts/Merriweather/Merriweather-Black.ttf);
+  }
+  
+  @font-face {
+    font-family: '';
+    font-weight: 100;
+    src: local('Lato-Thin'), url(../fonts/Lato/Lato-Thin.ttf);
+  }
+  
+  @font-face {
+    font-family: '';
+    font-weight: 100;
+    src: local('Lato-ThinItalic'), url(../fonts/Lato/Lato-ThinItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: 'lato';
+    font-weight: 300;
+    src: local('Lato-Light'), url(../fonts/Lato/Lato-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: 'lato';
+    font-weight: 300;
+    src: local('Lato-lightItalic'), url(../fonts/Lato/Lato-LightItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    src: local('Yeseva One'), url(../fonts/Yeseva_One/YesevaOne-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'lato';
+    font-weight: 700;
+    src: local('Lato-Bold'), url(../fonts/Lato/Lato-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: 'lato';
+    font-weight: 900;
+    src: local('Lato-Black'), url(../fonts/Lato/Lato-Black.ttf);
+  }
