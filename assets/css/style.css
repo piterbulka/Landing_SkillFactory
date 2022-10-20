@@ -2,7 +2,8 @@
     --header-color: #131313;
     --hover-color: #E3B873;
     --nav-link-color:  #FFFFFF;
-    --bgc-color: #000000;
+    --bgc-color: #131313;
+    --projects__nav-link-color:rgba(255, 255, 255, 0.3);
 }
 *{
     margin: 0;
@@ -118,35 +119,59 @@ header{
 }
 
 /* main*/
-/* main__info*/
-.main__info{
+/* section__info*/
+.section__info{
     background-image: url(../img/Group\ 7.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
-.main__info_wrap{
+.info__wrap{
     max-width: 515px;
     padding: 194px 0 208px;
 }
 .gold{
     color: var(--hover-color);
 }
-.main__info_btn{
-    padding: 19px 42px;
+
+/* section__projects*/
+
+
+.section__projects{
+    background-color: var(--bgc-color);
+    display: flex;
+    justify-content: flex-end;
 }
-.main__info_btn-white{
-    background-color: transparent;
-    border:  white solid 1px;
-    padding: 18px 23px;
-    margin-right: 20px;
-    width: 207px;
+.projects__nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 107px;
+}
+.projects__nav-link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Yeseva One','sans-serif';
+    color: var(--projects__nav-link-color) ;
     transition: all .3s;
+    margin-right: 60px;
+    margin-bottom: 45px;
+    padding-bottom: 2px;
+   
 }
-.main__info_btn-white:last-child{
-    margin-right: 0;
+.projects__nav-link:hover{
+    color: var(--hover-color);
+    transition: all .3s;
+    border-bottom: solid 1px;
+    
 }
-.main__info_btn-white:hover{
-    background-color: var(--hover-color);
-    border: none;
+.active-line{
+    color: var(--hover-color);
+    border-bottom: var(--hover-color) solid 1px;
+
+}
+.projects__info{
+    display: flex;
+    justify-content: space-between;
 }
