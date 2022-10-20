@@ -32,6 +32,22 @@ p{
     max-width: 1171px;
     margin: 0 auto;
 }
+button{
+    background-color: var(--hover-color);
+    color: var(--nav-link-color);
+
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+
+    padding: 13px 33px;
+
+    font-family: 'Nunito Sans', 'sans-serif';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
 /* header*/
 header{
     background-color: var(--header-color);
@@ -49,7 +65,10 @@ header{
     font-size: 11px;
     line-height: 15px;
     text-transform: uppercase;
+    
 }
+
+
 .header__nav{
     display: flex;
     justify-content: space-between;
@@ -62,21 +81,21 @@ header{
     font-size: 11px;
     line-height: 15px;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+
+}
+.active{
+    color: var(--hover-color);
+}
+.header__nav-link:hover{
+    color: var(--hover-color);
+    transition: all .3s;
 }
 .line-bottom{
     text-decoration: underline;
 }
 
-button{
-    background-color: var(--hover-color);
-    color: var(--nav-link-color);
-
-    border-radius: 2px;
-    cursor: pointer;
-    border: none;
-
-    padding: 13px 33px;
-}
 /* main*/
 /* main__info*/
 .main__info{
@@ -89,6 +108,15 @@ button{
     max-width: 515px;
     padding: 194px 0 208px;
 }
+.gold{
+    color: var(--hover-color);
+}
 .main__info_btn{
     padding: 19px 42px;
+}
+.main__info_btn-white{
+    background-color: transparent;
+    border:  white solid 1px;
+    padding: 18px 23px;
+    margin-left: 20px;
 }
