@@ -118,5 +118,14 @@ header{
     background-color: transparent;
     border:  white solid 1px;
     padding: 18px 23px;
-    margin-left: 20px;
+    margin-right: 20px;
+    width: 207px;
+    transition: all .3s;
+}
+.main__info_btn-white:last-child{
+    margin-right: 0;
+}
+.main__info_btn-white:hover{
+    background-color: var(--hover-color);
+    border: none;
 }
