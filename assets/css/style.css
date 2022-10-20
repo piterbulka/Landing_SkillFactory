@@ -33,20 +33,36 @@ p{
     margin: 0 auto;
 }
 button{
-    background-color: var(--hover-color);
-    color: var(--nav-link-color);
-
-    border-radius: 2px;
-    cursor: pointer;
-    border: none;
-
-    padding: 13px 33px;
+    background-color: transparent;
+    border:  white solid 1px;
+    padding: 18px 23px;
+    margin-right: 20px;
+    width: 207px;
+    transition: all .3s;
 
     font-family: 'Nunito Sans', 'sans-serif';
     font-weight: 400;
     font-size: 11px;
     line-height: 15px;
     text-transform: uppercase;
+    color: var(--nav-link-color);
+}
+button:hover{
+    background-color: var(--hover-color);
+    color: var(--nav-link-color);
+
+    border-radius: 2px;
+    cursor: pointer;
+    border: transparent solid 1px;
+
+    font-family: 'Nunito Sans', 'sans-serif';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    transition: all .3s;
+    
 }
 /* header*/
 header{
@@ -64,8 +80,10 @@ header{
     font-weight: 400;
     font-size: 11px;
     line-height: 15px;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
+}
+.header__logo-link:hover{
+    color: var(--nav-link-color);
 }
 
 
@@ -94,6 +112,9 @@ header{
 }
 .line-bottom{
     text-decoration: underline;
+}
+.header_btn{
+    padding: 13px 33px;
 }
 
 /* main*/
