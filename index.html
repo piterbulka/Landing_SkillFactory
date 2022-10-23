@@ -26,7 +26,7 @@
                 <div class="header__contacts">
                     <a class="header__logo-link line-bottom" href="tel:+7 (928) 768-32-39">+7 (928) 768-32-39</a>
                 </div>
-                <button class="header_btn">Request a call</button>
+                <button class="button header_btn">Request a call</button>
             </div>
         </div>
     </header>
@@ -40,8 +40,8 @@
                     <p class="info_text">Get ready-made turnkey repairs on time <br>
                     with work time saving up to 45 days and 20% from
                     cost of materials due to the organization of work</p>
-                    <button> CALCULATE THE COST</button>
-                    <button> SUBMIT YOUR APPLICATION</button>
+                    <button class="button"> CALCULATE THE COST</button>
+                    <button class="button"> SUBMIT YOUR APPLICATION</button>
                 </div>
             </div>
         </section>
@@ -81,32 +81,72 @@
                         </div>
                         <div class="projects__info_nav">
                             <div class="projects__info_nav-arrow_left"></div>
-                            <div class="projects__info_nav-arrow"></div>
+                            <div class="projects__info_nav-line"></div>
                             <div class="projects__info_nav-point active-point"></div>
                             <div class="projects__info_nav-point"></div>
                             <div class="projects__info_nav-point"></div>
-                            <div class="projects__info_nav-arrow arrow-right"></div>
+                            <div class="projects__info_nav-line line-right"></div>
                             <div class="projects__info_nav-arrow_right"></div>
                         </div>
                     </div>
                     <div class="projects__info_img">
-                        <img src="../Landing_SkillFactory/assets/img/image 2.1.jpg" alt="Rostov-on-Don, Admiral">
+                        <img src="./assets/img/image 2.1.jpg" alt="Rostov-on-Don, Admiral">
                     </div>
                 </div>
-                <div class="projects__video-wrap">
-                    <h2 class="subtitle">online control</h2>
-                    <div class="projects__camera">
-                        <div class="projects__camera_line">
-                        </div>
-                        <img src="./assets/img/camera.svg" alt="camera">
-                        <div class="projects__camera_line">
+                <div class="projects__video">
+                   <div class="projects__video_camera-wrap">
+                        <h2 class="subtitle">online control</h2>
+                        <div class="projects__camera">
+                            <div class="projects__camera_line">
+                            </div>
+                            <img src="./assets/img/camera.svg" alt="camera">
+                            <div class="projects__camera_line camera_line-right">
+                            </div>
                         </div>
                     </div>
-                    <div class="projects__video">
+                </div>
+            </div>
+        </section>
+        <section class="section__video">
+            <div class="container">
+                <div class="video__wrap">
+                    <div class="video">
                         <img src="./assets/img/video.jpg" alt="video">
-                        <img src="./assets/img/play.jpg" alt="play">
+                        <div class="video__play">
+                            <img src="./assets/img/play.svg" alt="play">
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="section__form">
+            <div class="container">
+                <div class="form__line">
+                </div>
+                <p class="form__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
+                    Leave a request below and you will receive a link to the broadcast.</p>
+                
+                <form class="form" name="feedback" method="POST" action="/feedback.php">
+                    <div class="form__wrap">
+                        <div class="form__group">
+                            <div class="form__title">Name</div>
+                            <div class="form__input_wrap"> 
+                                <input type="text" class="form__input" placeholder="What is your name:" >
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__title">Phone</div>
+                            <div class="form__input_wrap"> 
+                                <input type="text" class="form__input" placeholder="Your phone number:" >
+                            </div>
+                        </div>
+                        <button>Submit</button>
+                    </div>
+                    <div class="checkbox-wrap">
+                        <input  type="checkbox" class="checkbox-style" id="checked" checked="yes">
+                        <label for="checked" class="text">I agree to the processing of personal data </label>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
