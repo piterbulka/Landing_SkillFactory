@@ -115,6 +115,9 @@ button{
     transition: all .3s;
     
 }
+.shadow{
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+}
 /* header*/
 header{
     background-color: var(--header-color);
@@ -226,7 +229,7 @@ header{
     
 }
 .active-line{
-    color: var(--hover-color);
+    color: var(--hover-color) !important;
     border-bottom: var(--hover-color) solid 1px;
 
 }
@@ -658,3 +661,71 @@ input[type=feedback_text]::placeholder {
     font-size: 18px;
     line-height: 26px;
 }
+
+/*section__design*/
+
+.section__design{
+    background-image: url(../img/bgc-design.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    
+}
+.design__wrap{
+    display: flex;
+    justify-content: space-between;
+    height: 864px;
+}
+.design__variants{
+    margin-top: 100px;
+}
+
+.design__variants-links{
+    list-style-type: none;
+    margin-top: 47px;
+    margin-left: -37px;
+}
+.design__variants-link-list{
+    margin-bottom: 15px;
+}
+.design__variants-link-list:last-child{
+    margin-bottom: 0;
+}
+.design__variants-link{
+    font-family: 'Nunito Sans','sans-serif';
+    color: var(--nav-link-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.design__variants-link:hover{
+    color: var(--hover-color);
+    transition: all .3s;
+    border-bottom: solid 0.66px;
+}
+.design__cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 43px;
+}
+.design__cards img{
+    height: 100%;
+    width: 100%;
+}
+.design__cards-one{
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    transform: translate(0px, -41px);
+}
+
+.design__cards-two{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    transform: translate(0px, -112px);
+}
+
