@@ -229,9 +229,11 @@
                 </div>
             </div>
         </section>
-        <section class="feedback">
+        <section class="section__feedback">
+            <div class="container">
                 <div class="feedback__wrap">
                     <div class="feedback__list">
+                        <div class="feedback__list-wrap">
                         <div class="feedback__list-elem">
                             <div class="feedback__list-elem-icon">
                                 
@@ -284,40 +286,58 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                 
                     <div class="feedback__form-wrap">
                         <div class="feedback__form">
                             <div class="feedback__form-title">
-
+                                Leave a request for free
+                                    departure of the measurer
                             </div>
-                            <form class="form" name="feedback" method="POST" action=" ">
+                            <form name="feedback" method="POST" action=" ">
                                 <div class="feedback__form-group">
-                                    <div class="form__subtitle">Name</div>
-                                    <div class="form__input_wrap"> 
-                                        <input type="text" class="form__input" placeholder="What is your name:" >
+                                    <div class="form__subtitle feedback__form-grey">Name</div>
+                                    <div class="form__input_wrap "> 
+                                        <input type="feedback_text" class="form__input feedback__form-input" placeholder="What is your name:" >
                                     </div>
                                 </div>
                                 <div class="feedback__form-group">
-                                    <div class="form__subtitle">Phone</div>
+                                    <div class="form__subtitle feedback__form-grey">Phone</div>
                                     <div class="form__input_wrap"> 
-                                        <input type="text" class="form__input" placeholder="Your phone number:" >
+                                        <input type="feedback_text" class="form__input feedback__form-input" placeholder="Your phone number:" >
                                     </div>
                                 </div>
                                 <div class="feedback__form-group">
-                                    <div class="form__subtitle">Email</div>
+                                    <div class="form__subtitle feedback__form-grey">Email</div>
                                     <div class="form__input_wrap"> 
-                                        <input type="text" class="form__input" placeholder="Your email" >
+                                        <input type="feedback_text" class="form__input feedback__form-input" placeholder="Your email" >
                                     </div>
                                 </div>
-                                <div class="checkbox-wrap">
+                                <div class="feedback__form_checkbox">
                                     <input  type="checkbox" class="checkbox-style" id="checked" checked="yes">
-                                    <label for="checked" class="text">I agree to the processing of personal data </label>
+                                    <label for="checked" class="checkbox-text">I agree to the processing of personal data </label>
+                                </div>
+                                <div class="feedback__form-btn">
+                                    <button >Call the measurer</button>
                                 </div>
                             </form> 
                         </div>   
                     </div>
                 </div>
+                <div class="feedback__coin">
+                    <div class="feedback__coin-pig">
+                        <div class="feedback__coin-pig-item">
+                            <img class="feedback__coin-pig-item-img" src="./assets/img/pig.svg" alt="">
+                        </div>
+                        <div class="feedback__coin-pig-text">
+                            Help save 10 - 20% of the<br>
+                            cost of materials
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </section>
+
     </main>
 </body>
 </html>
