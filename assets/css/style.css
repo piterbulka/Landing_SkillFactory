@@ -5,6 +5,8 @@
     --projects__nav-link-color:rgba(255, 255, 255, 0.3);
     --form__text-color:#363636;
     --form__title-color:rgba(54, 54, 54, 0.5);
+    --subtitle_black:  #181818;
+    --list-color:#959595;
 }
 *{
     margin: 0;
@@ -26,6 +28,13 @@ h4{
     text-transform: uppercase;
     color: var(--hover-color);
 }
+.white{
+    color: var(--nav-link-color);
+}
+.black{
+    color: var(--form__text-color);
+    text-transform:capitalize;
+}
 .title{
     font-family: 'Yeseva One','sans-serif' ;
     font-weight: 400;
@@ -44,7 +53,9 @@ h4{
     text-transform: uppercase;
     color: var(--nav-link-color);
 }
-
+.subtitle_black{
+    color: var(--subtitle_black);
+}
 .header__container{
     margin: 0 auto;
     max-width: 1256px;
@@ -323,13 +334,12 @@ header{
 .projects__video_camera-wrap{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    height: 326px;
 }
 .projects__camera{
     display: flex;
     margin-top: 12px;
-    margin-bottom: 257px;
 }
 .projects__camera_line{
     border-bottom: 1.54px solid var(--hover-color);
@@ -371,9 +381,7 @@ header{
 
 /*section__form*/
 
-.section__form{
-    
-}
+
 
 .form__line{
     border-bottom: 1.54px solid var(--hover-color);
@@ -414,10 +422,7 @@ header{
 .form__group{
     margin-right: 58px;
 }
-/* .form__input_wrap{
-    position: relative;
-    margin-bottom: 32px;
-} */
+
 .form__input{
     outline: 0;
     border: 0;
@@ -464,4 +469,52 @@ input[type=text]::placeholder {
     border-color: var(--hover-color);
     background-color: var(--hover-color);
     background-image: url(../img/checkbox.svg)
+}
+
+/*section__types*/
+
+.types__molot{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.types__cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 31px;
+}
+
+.types__card_image{
+    max-width: 392px;
+    min-height: 421px;
+}
+.types__card_image img{
+    width: 100%;
+    height: 100%;
+}
+.types__card_info{
+    background-color: var(--nav-link-color);
+    padding:25px 34px  48px 34px;
+    max-width: 250px;
+    transform: translate(25px, -146px);
+}
+.types__card_info-list{
+    font-family: 'Nunito Sans','sans-serif';
+    color:var(--list-color);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    margin-top: 13px;
+    margin-top: 13px;
+    margin-left: -23px;
+}
+
+.types__card_money{
+    width: 200px;
+    background-color: var(--hover-color);
+    text-align: center;
+    padding: 17px 21px;
+    transform: translate(25px, -173px);
 }
