@@ -392,7 +392,7 @@ header{
 
 .form__text{
     font-family: 'Nunito Sans','sans-serif';
-    width:  651px;
+    max-width:  651px;
     font-weight: 400;
     font-size: 18px;
     line-height: 37px;
@@ -400,9 +400,10 @@ header{
     color: var(--form__text-color);
     margin: 0 auto;
     transform: translate(0px, -115px);
+    
 }  
 
-.form__title{
+.form__subtitle{
     font-family: 'Nunito Sans','sans-serif';
     font-weight: 400;
     font-size: 13px;
@@ -499,6 +500,7 @@ input[type=text]::placeholder {
     padding:25px 34px  48px 34px;
     max-width: 250px;
     transform: translate(25px, -146px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 .types__card_info-list{
     font-family: 'Nunito Sans','sans-serif';
@@ -509,6 +511,7 @@ input[type=text]::placeholder {
     margin-top: 13px;
     margin-top: 13px;
     margin-left: -23px;
+    
 }
 
 .types__card_money{
@@ -517,4 +520,53 @@ input[type=text]::placeholder {
     text-align: center;
     padding: 17px 21px;
     transform: translate(25px, -173px);
+}
+
+/*section__feedback*/
+
+.feedback__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.feedback__list{
+    background-image: url(../img/feedback__bgc.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 1006px;
+}
+
+.feedback__list-elem{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 114px;
+}
+.feedback__list-elem:first-child{
+    margin-top: 117px;
+}
+.feedback__list-elem:last-child{
+    margin-bottom: 56px;
+}
+.feedback__list-elem-icon{
+    background-color: var(--hover-color);
+    width: 41.76px;
+    height: 41.76px;
+    border: 8px solid var(--nav-link-color);
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 30px;
+    margin-right: 5px ;
+}
+.feedback__list-elem-icon-number{
+    text-align: center;
+    margin-top: 8px;
+}
+
+.feedback__list-elem-text{
+    font-family: 'Nunito Sans','sans-serif';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 320px;
+    color: var(--form__text-color);
 }
