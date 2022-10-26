@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box; 
 }
 h1{
     font-family: 'Yeseva One','sans-serif' ;
@@ -366,24 +367,34 @@ header{
     transform: translate(10px, -215px);
 }
 .video{
-    max-height: 434px;
-    max-width: 817px;
+    height: 434px;
+    width: 817px;
+    position: relative;
+
+    padding: 153px 340px
 }
 .video img{
-    height: 100%;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
 }
 
 .video__play{
     width: 140px;
     height: 140px;
-    transform: translate(337px, -287px);
+    position: relative;
 }
 .video__play img{
     width: 100%;
     height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
 }
-
 /*section__form*/
 
 
@@ -477,6 +488,7 @@ input[type=text]::placeholder {
     background-image: url(../img/checkbox.svg)
 }
 
+
 /*section__types*/
 
 .types__molot{
@@ -493,19 +505,25 @@ input[type=text]::placeholder {
 }
 
 .types__card_image{
-    max-width: 392px;
-    min-height: 421px;
+    width: 392px;
+    height: 421px;
+    position: relative;
 }
 .types__card_image img{
     width: 100%;
     height: 100%;
+    
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
 }
 .types__card_info{
     background-color: var(--nav-link-color);
-    padding:25px 34px  48px 34px;
-    max-width: 250px;
-    transform: translate(25px, -146px);
+    padding:25px 34px 48px 34px;
+    transform: translate(25px, -130px);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    width: 330px;
 }
 .types__card_info-list{
     font-family: 'Nunito Sans','sans-serif';
@@ -514,28 +532,26 @@ input[type=text]::placeholder {
     font-size: 13px;
     line-height: 27px;
     margin-top: 13px;
-    margin-top: 13px;
-    margin-left: -23px;
     
 }
 
 .types__card_money{
-    width: 200px;
+    width:  238px;;
     background-color: var(--hover-color);
     text-align: center;
     padding: 17px 21px;
     transform: translate(25px, -173px);
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3)
 }
 
 /*section__feedback*/
 .section__feedback{
     background-image: url(../img/feedback__bgc.png);
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: center;
     background-size: auto;
-    transform: translate(10px, -110px);
+    transform: translate(0px, -110px);
 }
 .feedback__wrap{
     display: flex;
@@ -556,16 +572,16 @@ input[type=text]::placeholder {
 }
 .feedback__list-elem-icon{
     background-color: var(--hover-color);
-    width: 41.76px;
-    height: 41.76px;
+    width: 60px;
+    height: 60px;
     border: 8px solid var(--nav-link-color);
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
     border-radius: 30px;
-    margin-right: 5px ;
+    margin-right: 17px ;
 }
 .feedback__list-elem-icon-number{
     text-align: center;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .feedback__list-elem-text{
@@ -575,6 +591,7 @@ input[type=text]::placeholder {
     line-height: 19px;
     max-width: 320px;
     color: var(--form__text-color);
+    text-align: start;
 }
 
 .feedback__form{
@@ -625,10 +642,12 @@ input[type=feedback_text]::placeholder {
     font-weight: 400;
     font-size: 14px;
     font-family: 'Nunito Sans','sans-serif';
+    cursor: pointer;
 }
 .feedback__form_checkbox{
     margin-top: 16px;
     margin-bottom: 10px;
+    
 }
 .feedback__form-btn{
     display: flex;
@@ -672,12 +691,13 @@ input[type=feedback_text]::placeholder {
     background-position: center center;
     background-size: cover;
     position: relative;
-    
+    height: 864px; 
+    transform: translateY(60px);
 }
 .design__wrap{
     display: flex;
     justify-content: space-between;
-    height: 864px;
+
 }
 .design__variants{
     margin-top: 100px;
@@ -686,7 +706,7 @@ input[type=feedback_text]::placeholder {
 .design__variants-links{
     list-style-type: none;
     margin-top: 47px;
-    margin-left: -37px;
+
 }
 .design__variants-link-list{
     margin-bottom: 15px;
@@ -709,18 +729,68 @@ input[type=feedback_text]::placeholder {
     border-bottom: solid 0.66px;
 }
 .design__cards{
-    display: flex;
-    justify-content: space-between;
-    gap: 43px;
+   display: flex;
+   gap: 40px;
 }
-.design__cards img{
-    height: 100%;
+
+.design__card-1{
+    width: 354px;
+    height: 558px;
+    position: relative;
+ }
+.design__card-1 img {
     width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
 }
-.design__cards-one{
+.design__card-2{
+    width: 354px;
+    height: 350px;
+    position: relative;
+}
+
+.design__card-2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+ .design__card-3{
+    width: 354px;
+    height: 275px;;
+    position: relative;
+}
+.design__card-3 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+ .design__card-4{
+    width: 354px;
+    height: 625px;
+    position: relative;
+}
+.design__card-4 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+
+ .design__cards-one{
     display: flex;
     flex-direction: column;
-    gap: 39px;
+    gap: 37px;
     transform: translate(0px, -41px);
 }
 
@@ -739,7 +809,9 @@ input[type=feedback_text]::placeholder {
     background-position-y:bottom;
     background-repeat: no-repeat;
     background-repeat: repeat-x;
+    transform: translateY(70px);
 }
+
 .clients__cards-wrap{
     display: flex;
     justify-content: space-between;
@@ -883,13 +955,19 @@ input[type=feedback_text]::placeholder {
     padding-left: 7px;
 }
 .question__contacts-card{
-    max-width:925px; 
-    max-height:465px;
+    width:925px; 
+    height:465px;
+    position: relative;
 }
 .question__contacts-card img{
-    height: 100%;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
 }
+
 
 /* footer */
 footer{

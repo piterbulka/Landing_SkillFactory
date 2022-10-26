@@ -127,7 +127,7 @@
                 <p class="form__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
                     Leave a request below and you will receive a link to the broadcast.</p>
                 
-                <form class="form" name="feedback" method="POST" action=" ">
+                <form class="form" id="form_1" name="feedback" method="POST" action="#">
                     <div class="form__wrap">
                         <div class="form__group">
                             <div class="form__subtitle">Name</div>
@@ -314,11 +314,11 @@
                                         <input type="feedback_text" class="form__input feedback__form-input" placeholder="Your email" >
                                     </div>
 
-                                <!-- этот сheckbox пересылает при нажатии на самый первый сheckbox, не понимаю как исправить -->
+                                
                                 </div>
                                 <div class="feedback__form_checkbox">
-                                    <input  type="checkbox" class="checkbox-style" id="checked" checked="yes">
-                                    <label for="checked" class="checkbox-text">I agree to the processing of personal data </label>
+                                    <input  type="checkbox" class="checkbox-style" id="checked_2" checked="yes">
+                                    <label for="checked_2" class="checkbox-text">I agree to the processing of personal data </label>
                                 </div>
                                 <div class="feedback__form-btn">
                                     <button >Call the measurer</button>
@@ -340,7 +340,7 @@
                 </div>
             </div>    
         </section>
-        <!-- Посмотри пожалуста этот раздел, мне кажется я тут чего-то нафигачила непонятного -->
+        
         <section class="section__design"> 
             <div class="container">
                 <div class="design__wrap">
@@ -363,18 +363,18 @@
                     </div>
                     <div class="design__cards">
                         <div class="design__cards-one">
-                            <div class="design__card" style="width: 354px; height: 558px;">
+                            <div class="design__card-1">
                                 <img src="./assets/img/whatch.jpg" alt="whatch" >
                             </div>
-                            <div class="design__card" style="width: 354px; height: 350px;">
+                            <div class="design__card-2">
                                 <img src="./assets/img/tv.jpg" alt="tv">
                             </div>
                         </div>
                         <div class="design__cards-two">
-                            <div class="design__card" style="width: 354px; height: 350px;">
+                            <div class="design__card-3">
                                 <img src="./assets/img/sofa.png" alt="sofa">
                             </div>
-                            <div class="design__card" style="width: 354px; height: 625px;">
+                            <div class="design__card-4">
                                 <img src="./assets/img/flower.jpg" alt="flower">
                             </div>
                         </div>
@@ -507,10 +507,10 @@
                                     <input type="feedback_text" class="form__input feedback__form-input guestion__form_input-feedback" placeholder="I want to know:">
                                 </div>
                             </div>
-                            <!-- и этот сheckbox пересылает при нажатии на самый первый сheckbox, не понимаю как исправить -->
+                            
                             <div class="feedback__form_checkbox">
-                                <input type="checkbox" class="checkbox-style" id="checked" checked="yes">
-                                <label for="checked" class="checkbox-text question__checkbox-text">I agree to the processing of personal data </label>
+                                <input type="checkbox" class="checkbox-style" id="checked_3" checked="yes">
+                                <label for="checked_3" class="checkbox-text question__checkbox-text">I agree to the processing of personal data </label>
                             </div>
                             <div class="feedback__form-btn">
                                 <button>Submit</button>
@@ -555,7 +555,7 @@
             <div class="header__contacts">
                 <a class="header__logo-link line-bottom" href="tel:+7 (928) 768-32-39">+7 (928) 768-32-39</a>
             </div>
-            <button class="button header_btn">Request a call</button>
+            <button id="#" class="button header_btn">Request a call</button>
         </div>
     </div>
 </footer>
