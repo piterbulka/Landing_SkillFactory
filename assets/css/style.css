@@ -889,3 +889,8 @@ input[type=feedback_text]::placeholder {
     height: 100%;
     width: 100%;
 }
+
+/* footer */
+footer{
+    background-color: var(--header-color);
+}
