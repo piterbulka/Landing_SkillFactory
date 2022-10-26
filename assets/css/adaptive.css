@@ -1,0 +1,10 @@
+@media only screen and (min-width: 1024px ) and (max-width: 1080px ) { 
+    .header__container {
+        margin: 0 20px;
+    }
+    .container{
+        margin: 0 20px;
+    }
+    .clients__card {
+        padding: 41px 4px 60px 13px;
+}
