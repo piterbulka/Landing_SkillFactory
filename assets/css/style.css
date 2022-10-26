@@ -809,13 +809,12 @@ input[type=feedback_text]::placeholder {
     background-position-y:bottom;
     background-repeat: no-repeat;
     background-repeat: repeat-x;
-    transform: translateY(70px);
 }
 
 .clients__cards-wrap{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 355px;
+    padding-bottom: 330px;
 }
 
 .clients__card{
