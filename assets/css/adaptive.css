@@ -1,9 +1,55 @@
-@media only screen and (min-width: 1024px ) and (max-width: 1080px ) { 
+@media only screen and (max-width: 1400px ){
+    .container{
+        margin: 0 20px;
+    }
+    .header__container {
+        margin: 0 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1040px ){
+    .header__nav {
+        gap: 15px;
+        justify-content: center;
+        width: fit-content;
+    }
+}
+@media only screen and (max-width: 1024px ){
     .header__container {
         margin: 0 20px;
     }
     .container{
         margin: 0 20px;
     }
-   
+    .types__card_money {
+        padding: 6px 21px;
+    }  
+    .design__cards {
+        display: flex;
+        gap: 20px;
+    }
+    .design__wrap {
+        gap: 15px;
+    }  
+    .design__variants {
+        margin-top: 65px;
+    }
+}
+
+@media only screen and (max-width: 950px ) { 
+    .design__card-1, .design__card-2, .design__card-3, .design__card-4{
+        width: 300px;
+    }
+} 
+@media only screen and (max-width: 930px ) { 
+    .header__nav {
+        gap: 10px;
+    }
+    .feedback__list-elem-icon {
+        min-width: 60px;
+    }
+    .feedback__list-elem{
+        margin-right: 20px;
+    }
 } 

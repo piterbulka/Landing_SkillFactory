@@ -368,8 +368,10 @@ header{
 }
 .video{
     height: 434px;
-    width: 817px;
+    max-width: 817px;
     position: relative;
+    display: inline-block;
+    width: 100%;
 
     padding: 153px 340px
 }
@@ -503,9 +505,13 @@ input[type=text]::placeholder {
     gap: 30px;
     margin-top: 31px;
 }
-
+.types__card{
+    display: inline-block;
+    width: 100%;
+}
 .types__card_image{
-    width: 392px;
+    max-width: 392px;
+    width: 100%;
     height: 421px;
     position: relative;
 }
@@ -523,7 +529,8 @@ input[type=text]::placeholder {
     padding:25px 34px 48px 34px;
     transform: translate(25px, -130px);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-    width: 330px;
+    width: 85%;
+    
 }
 .types__card_info-list{
     font-family: 'Nunito Sans','sans-serif';
@@ -532,11 +539,10 @@ input[type=text]::placeholder {
     font-size: 13px;
     line-height: 27px;
     margin-top: 13px;
-    
 }
 
 .types__card_money{
-    width:  238px;;
+    width: 70%;
     background-color: var(--hover-color);
     text-align: center;
     padding: 17px 21px;
@@ -803,7 +809,7 @@ input[type=feedback_text]::placeholder {
 
 /*section__clients*/
 .section__clients{
-    margin-top: 110px;
+    margin-top: 160px;
     background-image: url(../img/bgc-2.svg);
     background-position-x: center;
     background-position-y:bottom;
@@ -857,7 +863,7 @@ input[type=feedback_text]::placeholder {
     background-color: var(--hover-color);
     display: flex;
     padding: 11px 13px 11px 17px;
-    max-width: 271px;;
+    width: 81%;
     box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
     transform: translate(0px, -27px);
 }
@@ -954,9 +960,11 @@ input[type=feedback_text]::placeholder {
     padding-left: 7px;
 }
 .question__contacts-card{
-    width:925px; 
-    height:465px;
+    max-width: 925px;
+    height: 465px;
     position: relative;
+    display: inline-block;
+    width: 100%;
 }
 .question__contacts-card img{
     width: 100%;
