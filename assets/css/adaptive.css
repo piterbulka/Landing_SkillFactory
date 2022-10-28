@@ -19,9 +19,6 @@
     .header__container {
         margin: 0 20px;
     }
-    .container{
-        margin: 0 20px;
-    }
     .types__card_money {
         padding: 6px 21px;
     }  
@@ -46,6 +43,12 @@
     .header__nav {
         gap: 10px;
     }
+    .projects__info_img {
+        max-height: 400px;
+    }
+    .types__card_image {
+        height: 323px;
+    }
     .feedback__list-elem-icon {
         min-width: 60px;
     }
@@ -53,3 +56,112 @@
         margin-right: 20px;
     }
 } 
+@media only screen and (max-width: 910px ) { 
+    .header__nav {
+        flex-wrap: wrap;
+    }
+    .header__contacts{
+        min-width: 120px;
+        margin-left: 10px;
+    }
+    .info__wrap {
+        padding: 134px 0 107px;
+    }
+    .projects__nav {
+        margin-top: 70px;
+    }
+    .projects__info_img {
+        max-height: 337px;
+    }
+    .projects__video {
+        margin-top: 57px;
+    }
+    .video {
+        height: 402px;
+    }
+    .section__feedback {
+        transform: translate(0px, -165px);
+    }
+    .section__design {
+        transform: translateY(-41px);
+    }
+    .section__clients {
+        margin-top: 70px;
+    }
+    .clients__card_name-photo {
+        height: 55px;
+        width: 55px;
+     }
+     .clients__card_name-title {
+        font-size: 15px;
+    }
+    .clients__card {
+        padding: 20px 5px 27px 13px;
+    }
+    .clients__card-case-s {
+        font-size: 15px;
+        line-height: 24px;
+        margin-left: 8px;
+        margin-right: 13px;
+    }
+    .clients__cards_case {
+        padding: 5px 2px 4px 5px;
+    }
+
+    .question__contacts-wrap {
+        transform: translate(0px, -95px);
+    }
+
+}
+
+@media only screen and (max-width: 865px ) { 
+    .design__card-1, .design__card-2, .design__card-3, .design__card-4{
+        width: 250px;
+    }
+    
+}
+@media only screen and (max-width: 780px ) {
+    .info__wrap {
+        padding: 85px 0 88px;
+    }
+    .form__group {
+        margin-right: 20px;
+    }
+    .projects__nav-link {
+        margin-right: 15px;
+
+    }
+    .projects__info_img {
+        max-height: 263px;
+        margin-top: 100px;
+    }
+    .video {
+        height: 393px;
+        padding: 129px 300px;
+    }
+    .types__cards {
+        gap: 11px;
+    }
+    .types__card_info {
+        padding: 15px 12px 43px 26px;
+        transform: translate(16px, -130px);
+    }
+    .white {
+        font-size: 15px;
+    }
+    .types__card_money {
+        padding: 6px 8px;
+    }
+    .feedback__list-elem {
+        margin-bottom: 70px;
+    }
+    .feedback__form {
+        padding: 28px 33px 27px 25px;
+    }
+    .feedback__coin {
+        transform: translate(0px, 27px);
+    }
+    .section__design {
+        transform: translateY(0px);
+    }
+}
