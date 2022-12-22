@@ -211,6 +211,7 @@ header{
     display: flex;
     justify-content: flex-end;
     margin-top: 107px;
+    
 }
 .projects__nav-link{
     font-weight: 400;
@@ -223,7 +224,7 @@ header{
     margin-right: 60px;
     margin-bottom: 45px;
     padding-bottom: 2px;
-   
+    cursor: pointer;
 }
 .projects__nav-link:hover{
     color: var(--hover-color);
@@ -231,15 +232,12 @@ header{
     border-bottom: solid 1px;
     
 }
-.active-line{
-    color: var(--hover-color) !important;
-    border-bottom: var(--hover-color) solid 1px;
 
-}
-.projects__info{
+
+.project__info__card_wrap-wrap{
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 30px;
 }
 
 .projects__info_card-wrap{
@@ -247,8 +245,15 @@ header{
     grid-template-columns: 200px 200px;
     grid-template-rows: 55px 55px;
     grid-gap: 35px 0px;
+    
 }
 
+
+.projects__info_card-wrap-wrap{
+    display: flex;
+    justify-content: space-between ;
+    gap: 70px;
+}
 .projects__info_text_subtitle{
     font-size: 14px;
     line-height: 27px;
@@ -268,7 +273,7 @@ header{
 }
 
 .projects__info_img{
-    max-height: 482px;
+    height: 482px;
     max-width: 679px;   
 }
 
@@ -280,6 +285,8 @@ header{
     display: flex;
     align-items: center;
     margin-top: 71px;
+    margin-bottom: 40px;
+    
 }
 .projects__info_nav-arrow_left{
     Width: 8.59px;
@@ -290,6 +297,7 @@ header{
     transform: rotate(-135deg);
     margin: 0;
     cursor: pointer;
+
 }
 .projects__info_nav-line{
     Width:40.51px;
@@ -300,7 +308,7 @@ header{
     cursor: pointer;
 }
 .line-right{
-    transform: translate(10px, -1px);
+    transform: translate(9px, 1px);
     margin-right: 0;
     margin-left: 12px;
 }
@@ -354,6 +362,13 @@ header{
 }
 .camera_line-right{
     transform: translate(6px, -11px);
+}
+
+/*projects__slider*/
+.slideshow-container{
+
+    position: relative;
+    margin: auto;
 }
 
 /*section__video*/
